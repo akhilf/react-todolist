@@ -3,7 +3,7 @@ import TodoItem from './TodoItem';
 
 const TodoList = ({ todos, removeTodo, editTodo }) => {
   return (
-    <div>
+    <div className='todo-list'>
       {/* Use a ul element with role="list" for assistive technologies */}
       <ul role="list" aria-labelledby="todo-list-heading">
         {todos.length > 0 ? (

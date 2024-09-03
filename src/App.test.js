@@ -54,4 +54,27 @@ describe('App Component', () => {
       expect(screen.queryByText('Second Todo')).not.toBeInTheDocument();
     });
   });
+  test('sorts todos by priority', () => {
+    render(<App />);
+
+    // Add todos with different priorities
+    const input = screen.getByTestId('task-title');
+    const input1 = screen.getByTestId('task-priority');
+    fireEvent.change(input, { target: { value: 'High priority task' } });
+    fireEvent.change(input1, { target: { value: 1 } });
+    fireEvent.click(screen.getByText('Add'));
+    
+    fireEvent.change(input, { target: { value: 'Low priority task' } });
+    fireEvent.change(input1, { target: { value: 2 } });
+    fireEvent.click(screen.getByText('Add'));
+
+    // Simulate sorting by priority
+    const sortButton = screen.getByText('Sort by Priority');
+    fireEvent.click(sortButton);
+
+    // Check if sorting is working correctly
+    const todos = screen.getAllByText(/Priority:/i);
+    expect(todos[0].textContent).toBe('High priority task (Priority: 1)');
+    expect(todos[1].textContent).toBe('Low priority task (Priority: 2)');
+  });
 });

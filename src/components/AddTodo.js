@@ -47,6 +47,7 @@ const AddTodo = ({ addTodo }) => {
         <input
           id="taskPriority"
           type="number"
+          data-testid="task-priority"
           placeholder="Priority (1-5)"
           value={priority}
           onChange={(e) => setPriority(Number(e.target.value))}
