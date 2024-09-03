@@ -22,6 +22,7 @@ const AddTodo = ({ addTodo }) => {
         <label htmlFor="taskTitle">Task</label>
         <input
           id="taskTitle"
+          data-testid="task-title"
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}

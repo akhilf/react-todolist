@@ -37,8 +37,8 @@ const TodoItem = ({ todo, removeTodo, editTodo }) => {
           <div className="flex-container">
             <div className="left-item">{todo.title} (Priority: {todo.priority})</div>
             <div className="right-item">
-                <button onClick={() => setIsEditing(true)} className="btn"  aria-label="Edit task">Edit</button>
-                <button onClick={() => removeTodo(todo.id)} className="btn" aria-label={`Remove task ${todo.title}`}>Remove</button>
+                <button  data-testid="edit-task" onClick={() => setIsEditing(true)} className="btn"  aria-label="Edit task">Edit</button>
+                <button  data-testid="remove-task" onClick={() => removeTodo(todo.id)} className="btn" aria-label={`Remove task ${todo.title}`}>Remove</button>
             </div>
           </div>
       )}
