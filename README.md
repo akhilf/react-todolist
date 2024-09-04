@@ -1,5 +1,21 @@
+## Todo List App
 
-**Todo App**
+Prerequisites
+============
+* node.js 
+* Git 
+* Clone the code from GitHub
+* Take the latest pull from Git
+
+Project setup
+===============
+* Go to the project folder structure
+* Run -> npm install
+* Run -> npm run start
+* Tests -> npm test
+* E2E -> npx playwright test
+  
+**Todo List page**
 
 ![Screenshot 2024-09-04 091532](https://github.com/user-attachments/assets/297b5391-30d9-406e-b445-6b7840452686)
 
