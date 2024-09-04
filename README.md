@@ -2,7 +2,7 @@
 
 Prerequisites
 ============
-* node.js 
+* node.js (version: v22.7.0)
 * Git 
 * Clone the code from GitHub
 * Take the latest pull from Git
@@ -14,7 +14,25 @@ Project setup
 * Run -> npm run start
 * Tests -> npm test
 * E2E -> npx playwright test
-  
+
+Features
+===============
+
+* List to-do items in a readable format (grid, list, etc.) with the appropriate priority
+displayed
+* Add a new item to the list with an assigned priority.
+* Remove an item from the list.
+* Clear the entire list.
+* Edit existing items.
+* Save to local storage and reload when entering the page
+* Implement unit testing
+* Implement end-to-end (E2E) testing.
+* Sort items by priority.
+
+Additional
+* Accessibility.
+* Error handling for Task.
+
 **Todo List page**
 
 ![Screenshot 2024-09-04 091532](https://github.com/user-attachments/assets/297b5391-30d9-406e-b445-6b7840452686)

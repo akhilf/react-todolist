@@ -29,8 +29,9 @@ const TodoItem = ({ todo, removeTodo, editTodo }) => {
                 onChange={(e) => setNewPriority(Number(e.target.value))}
             />
           </div>
-          <div className="right-item">
+          <div className="right-item save-item">
             <button className="btn" onClick={handleEdit} aria-label="Save edited task">Save</button>
+            <button  data-testid="cancel-task" onClick={() => setIsEditing(false)} className="btn"  aria-label="Cancel task">Cancel</button>
           </div>
         </div>
       ) : (   

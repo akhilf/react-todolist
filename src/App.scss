@@ -15,12 +15,6 @@ body {
 	padding: 30px;
 	border-radius: 5px;
 }
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 20px;
-}
 .btn {
 	display: inline-block;
 	background: #000;
@@ -73,6 +67,11 @@ body {
 }
 .right-item {
 	margin-left: auto;
+}
+.save-item{
+  width:200px;
+  text-align: right;
+  margin-right: 5px;
 }
 .todo-list {
 	ul {
